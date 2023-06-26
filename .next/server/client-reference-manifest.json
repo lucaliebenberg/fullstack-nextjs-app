@@ -269,6 +269,10 @@
     }
   },
   "entryCSSFiles": {
+    "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/page": {
+      "modules": [],
+      "files": []
+    },
     "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/layout": {
       "modules": [
         "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/globals.css",
@@ -277,10 +281,6 @@
       "files": [
         "static/css/app/layout.css"
       ]
-    },
-    "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/page": {
-      "modules": [],
-      "files": []
     }
   }
 }
