@@ -63,4 +63,6 @@ model Task {
 
   due     DateTime?
   deleted Boolean   @default(false)
+
+  @@index([ownerId])
 }
