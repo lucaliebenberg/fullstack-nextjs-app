@@ -8,6 +8,9 @@
 
 # next.js
 /.next/
+/.next/cache/
+/.next/static/
+/.next/trace/
 /out/
 
 # production
