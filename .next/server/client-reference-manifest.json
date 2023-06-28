@@ -239,7 +239,7 @@
       "id": "(app-client)/./components/Authform.tsx",
       "name": "*",
       "chunks": [
-        "app/(auth)/signin/page:static/chunks/app/(auth)/signin/page.js"
+        "app/(auth)/register/page:static/chunks/app/(auth)/register/page.js"
       ],
       "async": false
     },
@@ -247,7 +247,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/(auth)/signin/page:static/chunks/app/(auth)/signin/page.js"
+        "app/(auth)/register/page:static/chunks/app/(auth)/register/page.js"
       ],
       "async": false
     },
@@ -255,7 +255,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/(auth)/signin/page:static/chunks/app/(auth)/signin/page.js"
+        "app/(auth)/register/page:static/chunks/app/(auth)/register/page.js"
       ],
       "async": false
     }
@@ -281,11 +281,11 @@
         "static/css/app/(auth)/layout.css"
       ]
     },
-    "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/(auth)/register/page": {
+    "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/(auth)/signin/page": {
       "modules": [],
       "files": []
     },
-    "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/(auth)/signin/page": {
+    "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/(auth)/register/page": {
       "modules": [],
       "files": []
     }
