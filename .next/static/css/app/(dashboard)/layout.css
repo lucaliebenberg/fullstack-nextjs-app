@@ -545,6 +545,12 @@ video {
 .bg-transparent {
   background-color: transparent;
 }
+.stroke-gray-400 {
+  stroke: #9ca3af;
+}
+.stroke-violet-600 {
+  stroke: #7c3aed;
+}
 .p-6 {
   padding: 1.5rem;
 }
@@ -663,6 +669,10 @@ video {
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.hover\:stroke-violet-600:hover {
+  stroke: #7c3aed;
 }
 
 .active\:scale-100:active {
