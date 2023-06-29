@@ -4,6 +4,10 @@
   ],
   "middleware": {
     "/": {
+      "env": [
+        "JWT_SECRET",
+        "COOKIE_NAME"
+      ],
       "files": [
         "server/edge-runtime-webpack.js",
         "server/middleware.js"
@@ -12,8 +16,7 @@
       "page": "/",
       "matchers": [
         {
-          "regexp": "^/.*$",
-          "originalSource": "/:path*"
+          "regexp": "^/.*$"
         }
       ],
       "wasm": [],
