@@ -11,6 +11,7 @@
 /.next/cache/
 /.next/static/
 /.next/trace/
+/.next/webpack/
 /out/
 
 # production
