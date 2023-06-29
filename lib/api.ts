@@ -1,7 +1,7 @@
 const fetcher = async ({ url, method, body, json = true }) => {
   const res = await fetch(url, {
     method,
-    ...(body && { body: JSON.stringify(body) }),
+    body: body && JSON.stringify(body),
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -33,5 +33,13 @@ export const signin = async (user) => {
     method: "POST",
     body: user,
     json: false,
+  });
+};
+
+export const createNewProject = (name) => {
+  return fetcher({
+    url: "/api/projects",
+    method: "POST",
+    body: { name },
   });
 };

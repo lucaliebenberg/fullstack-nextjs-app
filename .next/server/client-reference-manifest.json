@@ -72,6 +72,14 @@
         "async": false
       }
     },
+    "(app-client)/./components/NewProject.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/NewProject.tsx",
+        "name": "*",
+        "chunks": [],
+        "async": false
+      }
+    },
     "(app-client)/./components/SidebarLink.tsx": {
       "*": {
         "id": "(sc_client)/./components/SidebarLink.tsx",
@@ -255,12 +263,20 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/(dashboard)/home/page:static/chunks/app/(dashboard)/home/page.js"
+        "app/(dashboard)/layout:static/chunks/app/(dashboard)/layout.js"
       ],
       "async": false
     },
     "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/node_modules/next/dist/esm/client/link.js": {
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/(dashboard)/layout:static/chunks/app/(dashboard)/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/components/NewProject.tsx": {
+      "id": "(app-client)/./components/NewProject.tsx",
       "name": "*",
       "chunks": [
         "app/(dashboard)/home/page:static/chunks/app/(dashboard)/home/page.js"
@@ -277,10 +293,6 @@
     }
   },
   "entryCSSFiles": {
-    "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/(auth)/signin/page": {
-      "modules": [],
-      "files": []
-    },
     "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/(auth)/layout": {
       "modules": [
         "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/styles/globals.css"
@@ -289,7 +301,19 @@
         "static/css/app/(auth)/layout.css"
       ]
     },
+    "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/(auth)/signin/page": {
+      "modules": [],
+      "files": []
+    },
     "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/(auth)/register/page": {
+      "modules": [],
+      "files": []
+    },
+    "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/(dashboard)/home/page": {
+      "modules": [],
+      "files": []
+    },
+    "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/(dashboard)/home/loading": {
       "modules": [],
       "files": []
     },
@@ -300,14 +324,6 @@
       "files": [
         "static/css/app/(dashboard)/layout.css"
       ]
-    },
-    "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/(dashboard)/home/page": {
-      "modules": [],
-      "files": []
-    },
-    "/Users/_lucaliebenberg/Desktop/Coding/fullstack-app-nextjs13/fullstack-nextjs-app/app/(dashboard)/home/loading": {
-      "modules": [],
-      "files": []
     }
   }
 }
