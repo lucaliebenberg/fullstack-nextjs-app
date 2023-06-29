@@ -20,4 +20,4 @@ const GreetingsSkeleton = () => {
   );
 };
 
-export default GreetingsSkeleton;
+export default GreetingsSkeleton

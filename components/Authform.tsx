@@ -1,49 +1,54 @@
-"use client";
+'use client';
 
 import { register, signin } from "@/lib/api";
-import { useCallback, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import Card from "./Card";
+import { useCallback, useState } from "react";
 import Button from "./Button";
+import Card from "./Card";
 import Input from "./Input";
 
 const registerContent = {
-  linkUrl: "/signin",
+  linkUrl: '/signin',
   linkText: "Already have an account?",
-  header: "Create a new account",
-  subheader: "Just a few things to get started",
-  buttonText: "Register",
-};
+  header: 'Create a new account',
+  subheader: 'Just a few things to get started',
+  buttonText: 'Register'
+}
 
 const signinContent = {
-  linkUrl: "/register",
+  linkUrl: '/register',
   linkText: "Don't have an account?",
-  header: "Welcome Back",
-  subheader: "Enter your credentials to access your account",
-  buttonText: "Sign In",
-};
+  header: 'Welcome back!',
+  subheader: 'Enter your credentials to access your account',
+  buttonText: 'Sign In'
+}
 
-const initial = { email: "", password: "", firstName: "", lastName: "" };
+const initial = {email: '', password: '', firstName: '', lastName: ''}
 
-const AuthForm = ({ mode }) => {
-  const [formState, setFormState] = useState({ ...initial });
-  const router = useRouter();
+const AuthForm = ({mode}) => {
+  const [formState, setFormState] = useState({...initial})
+  const router = useRouter()
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    if (mode === "register") {
-      await register(formState);
-    } else {
-      await signin(formState);
+    try {
+      if (mode === 'register') {
+        await register(formState)
+        console.log('yolo')
+      } else {
+        await signin(formState)
+      }
+  
+      router.push('/home')
+      setFormState(initial)
+    } catch(e) {
+      console.error(e)
     }
+  }
 
-    setFormState(initial);
-    router.replace("/home");
-  };
-
-  const content = mode === "register" ? registerContent : signinContent;
+  const content = mode === 'register' ? registerContent : signinContent
 
   return (
     <Card>
@@ -129,7 +134,10 @@ const AuthForm = ({ mode }) => {
         </form>
       </div>
     </Card>
-  );
-};
+  )
+}
+
 
 export default AuthForm;
+
+

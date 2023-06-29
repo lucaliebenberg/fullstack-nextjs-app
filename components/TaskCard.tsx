@@ -6,29 +6,29 @@ import Button from "./Button";
 import Card from "./Card";
 
 const getData = async () => {
-  const user = await getUserFromCookie(cookies());
+  const user = await getUserFromCookie(cookies())
   const tasks = await db.task.findMany({
     where: {
       ownerId: user?.id,
       NOT: {
         status: TASK_STATUS.COMPLETED,
-        deleted: false,
-      },
+        deleted: false
+      }
     },
     take: 5,
     orderBy: {
-      due: "asc",
-    },
-  });
+      due: 'asc'
+    }
+  })
 
-  return tasks;
-};
+  return tasks
+}
 
-const TaskCard = async ({ title, tasks }) => {
-  const data = tasks || (await getData());
+const TaskCard = async ({tasks, title}) => {
+  const data = tasks || (await getData())
 
   return (
-    <Card>
+  <Card>
       <div className="flex justify-between items-center">
         <div>
           <span className="text-3xl text-gray-600">{title}</span>
@@ -61,6 +61,6 @@ const TaskCard = async ({ title, tasks }) => {
       </div>
     </Card>
   );
-};
+}
 
-export default TaskCard;
+export default TaskCard
